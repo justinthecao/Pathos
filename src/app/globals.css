@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+ 
+@layer base {
+  :root {
+    --background: 186 18% 89%;
+    --foreground: 180 23% 3%;
+    --card: 186 18% 89%;
+    --card-foreground: 180 23% 3%;
+    --popover: 186 18% 89%;
+    --popover-foreground: 180 23% 3%;
+    --primary: 183.19 52% 35%;
+    --primary-foreground: 184.86 54% 86%;
+    --primary-color-rgb: hsl(
+      var(183.19),
+      var(52),
+      var(35)
+    );
+    --secondary: 208.42 83% 77%;
+    --secondary-foreground: 208.38 80% 18%;
+    --muted: 180 15% 79%;
+    --muted-foreground: 184 11% 26%;
+    --accent: 0 9% 85%;
+    --accent-foreground: 0 7% 25%;
+    --border: 182.86 13% 69%;
+    --input: 182.86 13% 69%;
+    --ring: 180 23% 3%;
+    --background-accent: 180 15% 79%;
+  }
+  .dark {
+    --background: 180 23% 3%;
+    --foreground: 186 18% 89%;
+    --card: 180 23% 3%;
+    --card-foreground: 186 18% 89%;
+    --popover: 180 23% 3%;
+    --popover-foreground: 186 18% 89%;
+    --primary: 183.39 53% 54%;
+    --primary-foreground: 183.91 52% 17%;
+    --secondary: 208.38 80% 18%;
+    --secondary-foreground: 208.3 82% 87%;
+    --muted: 180 14% 11%;
+    --muted-foreground: 182.73 9% 51%;
+    --accent: 0 7% 33%;
+    --accent-foreground: 0 9% 91%;
+    --border: 185 13% 19%;
+    --input: 185 13% 19%;
+    --ring: 186 18% 89%;
+    --background-accent: 180 14% 11%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+/* globals.css */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi/Satoshi-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi/Satoshi-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Add more @font-face rules for other weights and styles as necessary */
+.embed-content {
+  max-width: 100%;        /* Limits the width to the parent container's width */
+  max-height: 200px;      /* Sets a maximum height for the embed */
+  overflow: auto;         /* Adds scrollbars if the content overflows */
+  border: 1px solid #ccc; /* Optional: Adds a border around the embed */
+  border-radius: 8px;     /* Optional: Rounds the corners of the embed */
+}
+
+
+
